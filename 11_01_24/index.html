@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="login.html">
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="mockup-browser border bg-base-300 h-full w-full">
+        
+        <div id="Homepage" class="mockup-browser-toolbar">
+            <div class="input">https://moonlover.UwU.com</div>
+
+            <div class="avatar online pe-2">
+                <div class="w-10 h-10 rounded-full">
+                    <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                </div>
+            </div>
+
+            <label class="swap swap-rotate">
+            
+                <!-- this hidden checkbox controls the state -->
+                <input type="checkbox" class="theme-controller" value="synthwave" />
+            
+                <!-- sun icon -->
+                <svg class="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+                </svg>
+            
+                <!-- moon icon -->
+                <svg class="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                </svg>
+            
+            </label>
+        </div>
+
+        <div class="navbar bg-base-100">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="#Homepage">Homepage</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="login.html">Sign in</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-center">
+            <h1 class="btn btn-ghost text-2xl font-bold text-violet-900"><a class="text-yellow-400">moon</a>lover.UwU</h1>
+        </div>
+        <div class="navbar-end">
+            <button class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </button>
+            <button class="btn btn-ghost btn-circle">
+                <div class="indicator">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                    </svg>
+                    <span class="badge badge-xs badge-primary indicator-item"></span>
+                </div>
+            </button>
+        </div>
+        </div>
+
+        <div class="carousel w-full h-97 rounded-50">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="https://waltonbd.com/image/catalog/category-banner/computer/prelude-banner-desktop.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="https://dlcdnwebimgs.asus.com/gain/27091DD5-CDD5-431E-B9EA-294E428449B6/fwebp" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="https://www.melbournehifi.com.au/cdn/shop/collections/Headphones_1200x600_crop_center.jpg?v=1547011480" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="https://www.121officefurniture.co.uk/Uploads/2023/07/10/o0yb5vky_banner-home-office-desks-jan23-min.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="About" class="grid grid-cols-3 gap-4 my-10 mx-10">
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://nairametrics.com/wp-content/uploads/2022/02/Laptop-.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Laptop<p>$560.40</p></h2>
+                    <p>Lenovo ThinkPad X395 AMD Ryzen 5 PRO 3500U 2.10GHz Ram 8GB SSD 256GB</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://cdn.mos.cms.futurecdn.net/LekCjjpyVoWeFAJwZ79Tzc-1200-80.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Laptop<p>$1,799.98</p></h2>
+                    <p>HP Spectre x360 2-in-1 Laptop 14-ef2000ca + 3 Year Extended Warranty</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://cdn.mos.cms.futurecdn.net/GfinEMFXnT42BFxAcDc2rA.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">MacBook<p>$1,599</p></h2>
+                    <p>The MacBook Pro 13-inch (M1, 2020)</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://history-computer.com/wp-content/uploads/2022/04/wireless-mouse-on-collor-background-picture-id1310246978-1200x720.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Computer Mouse<p>$16.78</p></h2>
+                    <p>Computer Mouse: Complete History</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://reviewed-com-res.cloudinary.com/image/fetch/s--2B7jruAK--/b_white,c_limit,cs_srgb,f_auto,fl_progressive.strip_profile,g_center,q_auto,w_1200/https://reviewed-production.s3.amazonaws.com/1664319550000/About-Razer-Viper-V2-Mouse.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Gaming Mouse<p>$149.99</p></h2>
+                    <p>Razer's Viper V2 Pro Gaming Mouse Puts Speed Over Function</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://static.tweaktown.com/content/1/0/10483_11_corsair-darkstar-wireless-gaming-mouse-review_full.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Gaming Mouse<p>$139.99</p></h2>
+                    <p>Corsair Darkstar Wireless MOBA/MMO Gaming Mouse</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://cdn.mos.cms.futurecdn.net/fsDKHB3ZyNJK6zMpDDBenB-1200-80.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Headphone<p>$325</p></h2>
+                    <p>CThe best wireless headphones 2024: top Bluetooth cans from Sony, Bose and more</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://cdn.thewirecutter.com/wp-content/media/2023/07/bluetoothheadphones-2048px-6138.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Headphone<p>$300</p></h2>
+                    <p>JBL Tour One M2
+                    The best Bluetooth wireless headphones</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://www.everyshop.co.za/media/catalog/product/cache/3aaf7ef652111a7c23335511164c8ac8/h/i/high_resolution_jpg_zone_vibe_100_130_rose_closeup_ui_ecommerce_dcad.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Headphone<p>$162.08</p></h2>
+                    <p>Logitech Zone Vibe 100 wireless headphones</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://cdn11.bigcommerce.com/s-fj5u5hhzyb/images/stencil/1280x1280/products/27614/17645/T03879_180__61334.1693794805.jpg?c=1" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Desk<p>$199.99</p></h2>
+                    <p>Brixton Trestle Desk - White</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://www.treasurebox.co.nz/media/catalog/product/cache/de2dd5e5cbfb564e2b264350c134d057/2/2/22778_nakia_computer_corner_desk_-_black-1.jpeg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Desk<p>$349.00</p></h2>
+                    <p>Nakia Computer Corner Desk - Black</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://www.treasurebox.co.nz/media/catalog/product/cache/de2dd5e5cbfb564e2b264350c134d057/f/d/fd0231481cc9ff1427aa256904a8ad2e.jpeg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Desk<p>$135.00</p></h2>
+                    <p>Andrea 120cm Computer Desk - White</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="Contact" class="footer p-10 bg-base-200 text-base-content">
+        <aside>
+            <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                clip-rule="evenodd" class="fill-current">
+                <path
+                    d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
+                </path>
+            </svg>
+            <p>moonlover.UwU corporation Ltd.<br />Providing reliable tech since 2024</p>
+        </aside>
+        <nav>
+            <header class="footer-title">Services</header>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+            <header class="footer-title">Company</header>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+            <header class="footer-title">Legal</header>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </nav>
+        </footer>
+
+    </div>
+    
+</body>
+</html>
